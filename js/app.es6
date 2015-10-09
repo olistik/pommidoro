@@ -82,7 +82,6 @@ let cutCurrent = () => {
 delegateEventToElement("click", "[data-start]", (event) => {
   let minutes = parseInt(desiredMinutes.value, 10);
   setTimer(minutes);
-  console.debug(buttons);
   buttons.start.disabled = true;
   buttons.reset.disabled = false;
   buttons.cut.disabled = false;

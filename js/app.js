@@ -88,7 +88,6 @@ var cutCurrent = function cutCurrent() {
 delegateEventToElement("click", "[data-start]", function (event) {
   var minutes = parseInt(desiredMinutes.value, 10);
   setTimer(minutes);
-  console.debug(buttons);
   buttons.start.disabled = true;
   buttons.reset.disabled = false;
   buttons.cut.disabled = false;
