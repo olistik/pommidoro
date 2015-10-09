@@ -92,6 +92,7 @@ delegateEventToElement("click", "[data-start]", (event) => {
     if (timerFinished()) {
       saveCurrentTimer();
       notify("Pommidoro finished", `[${taskName.value}] Good one!`);
+      reset();
     }
   }, 1000);
   event.preventDefault();
